@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Palald Cars</title>
+</head>
+<form class="login-form" action="/cadastro" method="post">
+<h1>Cadastro do usuário</h1>
+<br>
+    <div class="form-group">
+    <label for="nome">Digite seu Nome:</label><br>
+    <input type="text" name="nome"><br>
+    </div>
+    <div class="form-group">
+    <label for="email">Digite seu email:</label><br>
+    <input type="text" name="email"><br>    
+    </div>
+    <div class="form-group">
+    <label for="senha">Digite sua Senha:</label><br>
+    <input type="text" name="senha"><br><br>
+    </div>
+    <button type="submit">Cadastrar</button>
+    <br>
+</form>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}}

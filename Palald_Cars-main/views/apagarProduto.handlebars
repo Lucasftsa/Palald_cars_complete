@@ -1,0 +1,43 @@
+<h2>Consulta do produto atual</h2>
+<form action="/consultaBProduto" method="post">
+    <label for="nome">Nome do Produto:</label><br>
+    <input type="text" name="nome_carro" placeholder="Nome do Produto"><br>
+    <br>
+    <button type="submit">Enviar</button>
+</form>
+<br>
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Cor</th>
+        <th>Quantidade em Estoque</th>
+        <th>Preço R$</th>
+    </thead>
+    <tbody>
+   {{#if valor}}
+        <tr>
+            <td>{{valor.id}}</td>
+            <td>{{valor.nome_carro}}</td>
+            <td>{{valor.cor_carro}}</td>
+            <td>{{valor.quantidade}}</td>
+            <td>{{valor.precoUnitario}}</td>
+        </tr>
+    {{/if}}
+    </tbody>
+</table>
+<br>
+<h2>Excluir Produto</h2>
+<br>
+<form action="/apagarProduto" method="post">
+    <label for="id">Id do Produto:</label><br>
+    <input type="text" name="id" placeholder="Id"><br>
+    <br><br>
+    <button type="submit">Enviar</button>
+</form>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}} 
+{{#if msgB}}
+    <p>{{msgB}}</p>
+{{/if}} 

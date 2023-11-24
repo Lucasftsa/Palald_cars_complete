@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Palald Cars</title>
+</head>
+<body>
+    {{#if log}}
+    <header class="menu"> 
+        <img class="icone" src="./img/Captura de tela 2023-03-21 115124.png" alt="logo da imagem da empresa">
+        <nav>
+            <ul class="menu-itens">
+                {{#if adm}}
+                <a href="/gerenciador">Gerenciador</a>
+                &emsp;&emsp;&emsp;
+                {{/if}}
+                <a href="/">Principal</a>
+                &emsp;&emsp;&emsp;
+                <a href="/produtos">Produtos</a>
+                &emsp;&emsp;&emsp;
+                <a href="/logout">Logout</a>
+                &emsp;&emsp;&emsp;
+                <a href="/carrinho"><img src="/img/carrinho_vazio.png" alt="ícone da empresa" id="carrinho-icon"></a>
+                &emsp;&emsp;&emsp;
+            </ul>
+        </nav>
+    </header>
+    {{else}}
+    <header class="menu"> 
+        <img class="icone" src="./img/Captura de tela 2023-03-21 115124.png" alt="logo da imagem da empresa">
+        <nav>
+            <ul class="menu-itens">
+                <a href="/">Principal</a>
+                &emsp;&emsp;&emsp;
+                <a href="/produtos">Produtos</a>
+                &emsp;&emsp;&emsp;
+                <a href="/login">Login</a>
+                &emsp;&emsp;&emsp;
+                <a href="/cadastro">Cadastro</a>
+                &emsp;&emsp;&emsp;
+            </ul>
+        </nav>
+    </header>
+    {{/if}}
+    {{{body}}}
+        <div class="espaço"></div>
+    <footer>
+        <div class="rodape">
+            <p>Horário: Segunda a Sexta das 8h30 às 19h </p>
+            <br>
+            <p>Email: sac@palaldcars.com.br 
+            </div></p>
+            <p class="copy">Copyright © 2023 Palald Cars</p>
+           </div>
+    </footer>
+    </body>
+</html>

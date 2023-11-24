@@ -1,0 +1,4 @@
+"id";"nome";"email";"senha";"tipo"
+1;"Eduardo";"eduardo@gmail.com";"$2b$10$yTV58cScsX6paCusuAoW6OuSYsIwAWdcVz/Srsch6bmLqU9QYDEuy";"cliente"
+2;"Lucas";"lucas@gmail.com";"$2b$10$7qM0gz4uIbEvZZhPHgvJzesEM9wF3UPQ2G9s0xd8zdNnaACJZaosy";"admin"
+5;"Ana Orsi";"ana@gmail.com";"$2b$10$Fdi0bvZVyVH2lrzVDw90jOdwxeUlcXuiXKgIlGqLyvL2znezAPr1S";"cliente"
